@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My First Website</title>
+  <style>
+    body {
+      background: #10152b;
+      color: white;
+      font-family: Arial;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    h1 {
+      color: #a78bfa;
+      font-size: 45px;
+    }
+
+    p {
+      font-size: 20px;
+    }
+
+    button {
+      background: #8b5cf6;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Welcome to My Website!</h1>
+  <p>This is my first website created using GitHub.</p>
+
+  <button onclick="alert('Welcome!')">
+    Click Me
+  </button>
+
+</body>
+</html>
