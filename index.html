@@ -1,241 +1,234 @@
 
-:root {
-    --background: #FAF7F2;
-    --white: #FFFFFF;
-    --lavender: #E9D9E9;
-    --blush: #F3DDE1;
-    --purple: #B58AB8;
-    --purple-dark: #98739C;
-    --gold: #D1B77E;
-    --heading: #30263A;
-    --text: #746879;
-    --border: #E9DDE9;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
+    <title>DHANUSH | AI Fashion Studio</title>
 
-body {
-    font-family: Arial, sans-serif;
-    background: var(--background);
-    color: var(--heading);
-    line-height: 1.7;
-}
+    <!-- CONNECTED LIGHT THEME CSS -->
+    <link rel="stylesheet" href="fashion.css">
+</head>
 
-header {
-    background: var(--white);
-    padding: 20px 7%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 15px;
-    box-shadow: 0 2px 12px #30263A0D;
-}
+<body>
 
-.logo {
-    color: var(--heading);
-    font-size: 27px;
-    font-weight: bold;
-    text-decoration: none;
-}
+<!-- HEADER -->
+<header>
+    <a href="index.html" class="logo">
+        DHANUSH<span>.</span>
+    </a>
 
-.logo span {
-    color: var(--purple);
-}
+    <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="outfits.html">Outfits</a>
+        <a href="hairstyles.html">Hairstyles</a>
+        <a href="accessories.html">Accessories</a>
+        <a href="shoes.html">Shoes</a>
+        <a href="#about">About</a>
+    </nav>
+</header>
 
-nav {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-}
+<!-- HERO SECTION -->
+<section class="hero" id="home">
 
-nav a {
-    color: #62566A;
-    text-decoration: none;
-    font-size: 14px;
-    transition: 0.3s;
-}
+    <div class="tag">AI PERSONAL FASHION STUDIO</div>
 
-nav a:hover,
-nav a.active {
-    color: var(--purple-dark);
-}
+    <h1>
+        Discover Your
+        <span style="color:#B58AB8;">Perfect Look.</span>
+    </h1>
 
-.hero {
-    padding: 75px 8%;
-    text-align: center;
-    background: linear-gradient(
-        135deg,
-        #FAF7F2,
-        #F0E8F0,
-        #F3DDE1
-    );
-}
+    <p>
+        Style. Confidence. Personality.
+        Explore fashion, hairstyles, accessories
+        and shoes with DHANUSH AI Fashion Studio.
+    </p>
 
-.hero h1 {
-    color: var(--heading);
-    font-size: clamp(35px, 6vw, 55px);
-    margin: 15px 0;
-}
+    <br>
 
-.hero p {
-    color: var(--text);
-    max-width: 650px;
-    margin: auto;
-}
+    <a href="#upload" class="btn">
+        CREATE YOUR NEW LOOK →
+    </a>
 
-.tag {
-    color: var(--purple-dark);
-    letter-spacing: 3px;
-    font-size: 12px;
-}
+</section>
 
-section,
-.gender-section {
-    padding: 55px 8%;
-}
+<!-- FASHION CATEGORIES -->
+<section id="categories">
 
-.section-title,
-.gender-title {
-    color: var(--heading);
-    margin-bottom: 25px;
-}
+    <div class="tag">EXPLORE YOUR STYLE</div>
 
-.card-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-}
+    <h2 class="section-title">
+        Discover Your Fashion
+    </h2>
 
-.card,
-.outfit-card,
-.category {
-    background: var(--white);
-    border: 1px solid var(--border);
-    border-radius: 13px;
-    overflow: hidden;
-    box-shadow: 0 5px 20px #30263A0A;
-    transition: 0.3s;
-}
+    <div class="category-grid">
 
-.card:hover,
-.outfit-card:hover,
-.category:hover {
-    transform: translateY(-6px);
-    border-color: var(--purple);
-    box-shadow: 0 10px 25px #30263A15;
-}
+        <a href="outfits.html" class="category">
+            <img
+                src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=700"
+                alt="Fashion outfits">
+            <h3>👗 Outfits</h3>
+        </a>
 
-.card img,
-.outfit-card img,
-.category img {
-    width: 100%;
-    height: 270px;
-    object-fit: cover;
-    display: block;
-}
+        <a href="hairstyles.html" class="category">
+            <img
+                src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=700"
+                alt="Hairstyles">
+            <h3>💇 Hairstyles</h3>
+        </a>
 
-.card-content,
-.outfit-info {
-    padding: 18px;
-}
+        <a href="accessories.html" class="category">
+            <img
+                src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?w=700"
+                alt="Fashion accessories">
+            <h3>💎 Accessories</h3>
+        </a>
 
-.card h3,
-.outfit-info h3 {
-    color: var(--heading);
-}
+        <a href="shoes.html" class="category">
+            <img
+                src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=700"
+                alt="Fashion shoes">
+            <h3>👠 Shoes</h3>
+        </a>
 
-.card p,
-.outfit-info p {
-    color: var(--text);
-    font-size: 14px;
-}
+    </div>
 
-.gender-tag {
-    display: inline-block;
-    background: var(--lavender);
-    color: var(--purple-dark);
-    padding: 6px 14px;
-    border-radius: 20px;
-    font-size: 12px;
-    margin-bottom: 15px;
-}
+</section>
 
-.btn {
-    display: inline-block;
-    padding: 13px 25px;
-    background: var(--purple);
-    color: white;
-    text-decoration: none;
-    border: none;
-    border-radius: 7px;
-    cursor: pointer;
-}
+<!-- PHOTO UPLOAD -->
+<section id="upload" class="upload-section">
 
-.btn:hover {
-    background: var(--purple-dark);
-}
+    <div class="tag">AI MAKEOVER STUDIO</div>
 
-.upload-section {
-    background: var(--lavender);
-    text-align: center;
-}
+    <h2 class="section-title">
+        Create Your New Look
+    </h2>
 
-.upload-box {
-    background: white;
-    max-width: 550px;
-    padding: 35px;
-    margin: 25px auto;
-    border: 2px dashed var(--purple);
-    border-radius: 15px;
-}
+    <p>
+        Upload a full-body photograph to begin
+        your personal fashion journey.
+    </p>
 
-#preview {
-    max-width: 100%;
-    max-height: 450px;
-    margin: 20px auto;
-    border-radius: 10px;
-}
+    <div class="upload-box">
 
-footer {
-    background: #EDE4EC;
-    color: #62566A;
-    text-align: center;
-    padding: 35px 15px;
-}
+        <h3>Upload Your Photograph</h3>
 
-footer p {
-    font-size: 13px;
-    margin-top: 8px;
-}
+        <p>Select a photograph of yourself.</p>
 
-@media(max-width: 750px) {
-    header {
-        justify-content: center;
+        <input
+            type="file"
+            id="photo"
+            accept="image/jpeg,image/png,image/webp">
+
+        <p id="filename">
+            No photograph selected
+        </p>
+
+        <img
+            id="preview"
+            alt="Your uploaded photo preview">
+
+        <p style="color:#98739C;font-size:13px;">
+            Supported formats: JPG, PNG and WEBP.
+            Maximum size: 10 MB.
+        </p>
+
+        <br>
+
+        <p style="color:#98739C;">
+            AI transformation functionality will be
+            connected in the next development stage.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+
+    <div class="tag">OUR VISION</div>
+
+    <h2 class="section-title">
+        About DHANUSH
+    </h2>
+
+    <p>
+        DHANUSH is a creative AI fashion studio
+        designed to help men and women explore
+        new fashion styles and discover their
+        personal appearance.
+    </p>
+
+    <p>
+        From outfits to hairstyles, accessories
+        and footwear, our goal is to make fashion
+        exploration simple, creative and exciting.
+    </p>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+
+    <h3>DHANUSH.</h3>
+
+    <p>Style. Confidence. Personality.</p>
+
+    <p>AI Fashion Studio | Men's & Women's Fashion</p>
+
+    <p>© 2026 DHANUSH. All Rights Reserved.</p>
+
+</footer>
+
+<!-- PHOTO PREVIEW SCRIPT -->
+<script>
+
+const photo = document.getElementById("photo");
+const preview = document.getElementById("preview");
+const filename = document.getElementById("filename");
+
+let currentImageURL = null;
+
+photo.addEventListener("change", function() {
+
+    const file = this.files[0];
+
+    if (!file) return;
+
+    const allowedTypes = [
+        "image/jpeg",
+        "image/png",
+        "image/webp"
+    ];
+
+    if (!allowedTypes.includes(file.type)) {
+        alert("Please select a JPG, PNG or WEBP image.");
+        this.value = "";
+        return;
     }
 
-    nav {
-        justify-content: center;
-        gap: 13px;
+    if (file.size > 10 * 1024 * 1024) {
+        alert("Please upload an image smaller than 10 MB.");
+        this.value = "";
+        return;
     }
 
-    .card-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media(max-width: 480px) {
-    .card-grid {
-        grid-template-columns: 1fr;
+    if (currentImageURL) {
+        URL.revokeObjectURL(currentImageURL);
     }
 
-    .card img,
-    .outfit-card img {
-        height: 300px;
-    }
-}
+    currentImageURL = URL.createObjectURL(file);
+
+    preview.src = currentImageURL;
+    preview.style.display = "block";
+
+    filename.textContent = file.name;
+
+});
+
+</script>
+
+</body>
+</html>
