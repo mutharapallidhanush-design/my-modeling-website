@@ -1,12 +1,4 @@
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DHANUSH | AI Fashion Studio</title>
-
-<style>
 * {
     margin: 0;
     padding: 0;
@@ -15,30 +7,31 @@
 }
 
 body {
-    background: #100d14;
-    color: white;
+    background: #FAF7F2;
+    color: #30263A;
     font-family: Arial, sans-serif;
 }
 
 header {
     padding: 22px 8%;
-    background: #191320;
+    background: #FFFFFF;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: sticky;
     top: 0;
     z-index: 10;
+    box-shadow: 0 2px 12px #30263A0D;
 }
 
 .logo {
     font-size: 27px;
     font-weight: bold;
-    color: white;
+    color: #30263A;
 }
 
 .logo span {
-    color: #d9a7d7;
+    color: #B58AB8;
 }
 
 nav {
@@ -48,13 +41,13 @@ nav {
 }
 
 nav a {
-    color: #eee;
+    color: #62566A;
     text-decoration: none;
     font-size: 14px;
 }
 
 nav a:hover {
-    color: #d9a7d7;
+    color: #B58AB8;
 }
 
 .hero {
@@ -63,9 +56,9 @@ nav a:hover {
     display: flex;
     align-items: center;
     background:
-    linear-gradient(90deg, #100d14 25%, #100d1466),
-    url("https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=1400")
-    center/cover;
+        linear-gradient(90deg, #FAF7F2 25%, #FAF7F288),
+        url("https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=1400")
+        center/cover;
 }
 
 .hero-content {
@@ -73,7 +66,7 @@ nav a:hover {
 }
 
 .tag {
-    color: #d9a7d7;
+    color: #A779A9;
     letter-spacing: 3px;
     font-size: 12px;
 }
@@ -85,11 +78,11 @@ nav a:hover {
 }
 
 .hero h1 span {
-    color: #d9a7d7;
+    color: #B58AB8;
 }
 
 .hero p {
-    color: #ddd;
+    color: #746879;
     margin-bottom: 25px;
     line-height: 1.8;
 }
@@ -98,11 +91,15 @@ nav a:hover {
     display: inline-block;
     padding: 14px 25px;
     border-radius: 6px;
-    background: #b47bae;
+    background: #B58AB8;
     color: white;
     text-decoration: none;
     border: none;
     cursor: pointer;
+}
+
+.btn:hover {
+    background: #98739C;
 }
 
 section {
@@ -112,28 +109,24 @@ section {
 .section-title {
     font-size: 35px;
     margin: 15px 0 30px;
-}
-
-.category-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    color: #30263A;
 }
 
 .category {
-    background: #211a29;
-    border: 1px solid #49364e;
+    background: #FFFFFF;
+    border: 1px solid #E9DDE9;
     border-radius: 12px;
     overflow: hidden;
     text-align: center;
-    color: white;
+    color: #30263A;
     text-decoration: none;
+    box-shadow: 0 5px 20px #30263A0A;
     transition: .3s;
 }
 
 .category:hover {
     transform: translateY(-7px);
-    border-color: #d9a7d7;
+    border-color: #B58AB8;
 }
 
 .category img {
@@ -147,7 +140,7 @@ section {
 }
 
 .upload-section {
-    background: #191320;
+    background: #F0E8F0;
     text-align: center;
 }
 
@@ -155,9 +148,9 @@ section {
     max-width: 550px;
     margin: auto;
     padding: 35px;
-    border: 2px dashed #a778a6;
+    border: 2px dashed #B58AB8;
     border-radius: 15px;
-    background: #241b2c;
+    background: #FFFFFF;
 }
 
 .upload-box input {
@@ -175,9 +168,9 @@ section {
 
 footer {
     padding: 30px;
-    background: #09070c;
+    background: #EDE4EC;
     text-align: center;
-    color: #aaa;
+    color: #62566A;
 }
 
 @media(max-width: 750px) {
@@ -191,188 +184,8 @@ footer {
         gap: 13px;
     }
 
-    .category-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
     section {
         padding: 55px 6%;
     }
 }
 
-@media(max-width: 420px) {
-    .category-grid {
-        grid-template-columns: 1fr;
-    }
-}
-</style>
-</head>
-
-<body>
-
-<header>
-    <div class="logo">DHANUSH<span>.</span></div>
-
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#outfits">Outfits</a>
-        <a href="#hairstyles">Hairstyles</a>
-        <a href="#accessories">Accessories</a>
-        <a href="#shoes">Shoes</a>
-        <a href="#about">About</a>
-    </nav>
-</header>
-
-<section class="hero" id="home">
-    <div class="hero-content">
-        <div class="tag">AI PERSONAL FASHION STYLIST</div>
-
-        <h1>THE ART OF <span>TRANSFORMATION.</span></h1>
-
-        <p>
-            Style. Confidence. Personality.
-            Discover your perfect look with our AI-powered
-            fashion and makeover experience.
-        </p>
-
-        <a href="#upload" class="btn">
-            CREATE YOUR NEW LOOK →
-        </a>
-    </div>
-</section>
-
-<section id="categories">
-    <div class="tag">EXPLORE YOUR STYLE</div>
-    <h2 class="section-title">Discover Your Fashion</h2>
-
-    <div class="category-grid">
-
-        <a href="#outfits" class="category">
-            <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=600" alt="Fashion outfits">
-            <h3>👗 Outfits</h3>
-        </a>
-
-        <a href="#hairstyles" class="category">
-            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=600" alt="Hairstyle inspiration">
-            <h3>💇 Hairstyles</h3>
-        </a>
-
-        <a href="#accessories" class="category">
-            <img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?w=600" alt="Fashion accessories">
-            <h3>💎 Accessories</h3>
-        </a>
-
-        <a href="#shoes" class="category">
-            <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=600" alt="Fashion shoes">
-            <h3>👠 Shoes</h3>
-        </a>
-
-    </div>
-</section>
-
-<section id="upload" class="upload-section">
-    <div class="tag">AI MAKEOVER STUDIO</div>
-    <h2 class="section-title">Create Your New Look</h2>
-
-    <p>Upload a full-body photograph to start your transformation.</p>
-
-    <div class="upload-box">
-        <h3>Upload Your Photograph</h3>
-
-        <input
-            type="file"
-            id="photo"
-            accept="image/jpeg,image/png,image/webp">
-
-        <p id="filename">No photograph selected</p>
-
-        <img id="preview" alt="Your selected photograph preview">
-
-        <p style="color:#cbbccc;font-size:13px;">
-            JPG, PNG or WEBP. Use a photo you own
-            or have permission to use.
-        </p>
-
-        <p style="color:#d9a7d7;margin-top:15px;">
-            AI transformation will be connected in the next stage.
-        </p>
-    </div>
-</section>
-
-<section id="outfits">
-    <div class="tag">FASHION COLLECTION</div>
-    <h2 class="section-title">Outfits</h2>
-    <p>Western · Traditional Indian · Casual · Party · Formal</p>
-</section>
-
-<section id="hairstyles">
-    <div class="tag">YOUR HAIR, YOUR STYLE</div>
-    <h2 class="section-title">Hairstyles</h2>
-    <p>Long · Short · Curly · Straight · Elegant</p>
-</section>
-
-<section id="accessories">
-    <div class="tag">THE FINISHING TOUCH</div>
-    <h2 class="section-title">Accessories</h2>
-    <p>Jewelry · Handbags · Watches · Sunglasses</p>
-</section>
-
-<section id="shoes">
-    <div class="tag">COMPLETE YOUR LOOK</div>
-    <h2 class="section-title">Shoes</h2>
-    <p>Heels · Sneakers · Boots · Sandals · Traditional</p>
-</section>
-
-<section id="about">
-    <div class="tag">OUR VISION</div>
-    <h2 class="section-title">About DHANUSH</h2>
-    <p>
-        A creative fashion platform designed to help
-        people explore new styles, experiment with fashion
-        and discover inspiring looks through AI technology.
-    </p>
-</section>
-
-<footer>
-    <h3>DHANUSH.</h3>
-    <p>Style. Confidence. Personality.</p>
-    <p>© 2026 DHANUSH Fashion Studio</p>
-</footer>
-
-<script>
-const photo = document.getElementById("photo");
-const preview = document.getElementById("preview");
-const filename = document.getElementById("filename");
-
-let currentImageURL = null;
-
-photo.addEventListener("change", function() {
-    const file = this.files[0];
-
-    if (!file) return;
-
-    if (!["image/jpeg", "image/png", "image/webp"].includes(file.type)) {
-        alert("Please select a JPG, PNG or WEBP image.");
-        this.value = "";
-        return;
-    }
-
-    if (file.size > 10 * 1024 * 1024) {
-        alert("Please select an image under 10 MB.");
-        this.value = "";
-        return;
-    }
-
-    if (currentImageURL) {
-        URL.revokeObjectURL(currentImageURL);
-    }
-
-    currentImageURL = URL.createObjectURL(file);
-    preview.src = currentImageURL;
-    preview.style.display = "block";
-    filename.textContent = file.name;
-});
-</script>
-
-</body>
-</html>
