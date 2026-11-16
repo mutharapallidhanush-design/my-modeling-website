@@ -2,259 +2,286 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Hairstyles | DHANUSH Fashion Studio</title>
-
-    <link rel="stylesheet" href="fashion.css">
-
-    <style>
-        .hair-card {
-            background: white;
-            border: 1px solid #E9DDE9;
-            border-radius: 14px;
-            overflow: hidden;
-            transition: 0.3s;
-        }
-
-        .hair-card:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 10px 25px #30263A15;
-        }
-
-        .hair-card img {
-            width: 100%;
-            height: 300px;
-            object-fit: cover;
-            display: block;
-        }
-
-        .hair-info {
-            padding: 18px;
-        }
-
-        .hair-info h3 {
-            color: #30263A;
-            margin-bottom: 8px;
-        }
-
-        .hair-info p {
-            color: #746879;
-            font-size: 14px;
-        }
-
-        .hair-section {
-            padding: 50px 8%;
-        }
-
-        .hair-section h2 {
-            margin-bottom: 25px;
-        }
-
-        .hair-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 24px;
-        }
-
-        @media(max-width:750px) {
-            .hair-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media(max-width:480px) {
-            .hair-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f8f5f1">
+  <meta name="description" content="DHANUSH Fashion Studio – Discover luxury fashion, modeling, hairstyles, outfits and accessories for men and women.">
+  <title>DHANUSH | Fashion & Modeling Studio</title>
+  <link rel="stylesheet" href="fashion.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<!-- HEADER -->
+<header class="site-header">
+  <a class="logo" href="index.html">
+    DHANUSH<span>.</span>
+    <small>FASHION STUDIO</small>
+  </a>
 
-<header>
-    <a href="index.html" class="logo">
-        DHANUSH<span>.</span>
-    </a>
+  <button class="menu-toggle" id="menuToggle"
+    aria-label="Open navigation" aria-expanded="false">
+    ☰
+  </button>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="outfits.html">Outfits</a>
-        <a href="hairstyles.html" class="active">Hairstyles</a>
-        <a href="accessories.html">Accessories</a>
-        <a href="shoes.html">Shoes</a>
-    </nav>
+  <nav class="main-nav" id="mainNav">
+    <a href="index.html" class="active">Home</a>
+    <a href="hairstyles.html">Hairstyles</a>
+    <a href="outfits.html">Outfits</a>
+    <a href="accessories.html">Accessories</a>
+    <a href="shoes.html">Shoes</a>
+    <a href="contact.html" class="nav-contact">Contact</a>
+  </nav>
 </header>
 
-<!-- HERO -->
+<main>
 
-<section class="hero">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <span class="eyebrow">WELCOME TO DHANUSH FASHION STUDIO</span>
+      <h1>Style is a way<br>to <em>express yourself.</em></h1>
+      <p>
+        Discover your signature look with fashion inspiration,
+        modern hairstyles and timeless modeling elegance.
+      </p>
+      <div class="hero-actions">
+        <a href="#collections" class="btn btn-primary">Explore Collections</a>
+        <a href="contact.html" class="btn btn-outline">Get in Touch</a>
+      </div>
+      <div class="hero-note">FASHION · BEAUTY · CONFIDENCE</div>
+    </div>
 
-    <div class="tag">HAIR & BEAUTY COLLECTION</div>
+    <div class="hero-image">
+      <img
+        src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=1000"
+        alt="Fashion editorial portrait of a model">
+      <div class="image-caption">
+        <span>THE ART OF STYLE</span>
+        <strong>Be uniquely you.</strong>
+      </div>
+    </div>
+  </section>
 
-    <h1>Discover Your Perfect Hairstyle</h1>
-
+  <!-- INTRODUCTION -->
+  <section class="intro section-padding">
+    <span class="eyebrow">OUR WORLD</span>
+    <h2>Fashion meets <em>individuality.</em></h2>
     <p>
-        Explore beautiful hairstyles for men and women.
-        Find the perfect hairstyle that matches your
-        personality, outfit and occasion.
+      Welcome to a world of creativity, confidence and personal style.
+      Explore curated fashion ideas and discover looks that inspire you
+      to express your personality.
     </p>
+  </section>
 
-</section>
-
-<!-- WOMEN'S HAIRSTYLES -->
-
-<section class="hair-section">
-
-    <span class="gender-tag">WOMEN'S COLLECTION</span>
-
-    <h2>Women's Hairstyles</h2>
-
-    <div class="hair-grid">
-
-        <div class="hair-card">
-            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=700"
-                 alt="Long hairstyle">
-            <div class="hair-info">
-                <h3>Long Hairstyles</h3>
-                <p>Elegant and beautiful long hair inspiration.</p>
-            </div>
-        </div>
-
-        <div class="hair-card">
-            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=700"
-                 alt="Short hairstyle">
-            <div class="hair-info">
-                <h3>Short Hairstyles</h3>
-                <p>Modern short cuts with a stylish appearance.</p>
-            </div>
-        </div>
-
-        <div class="hair-card">
-            <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=700"
-                 alt="Curly hairstyle">
-            <div class="hair-info">
-                <h3>Curly Hairstyles</h3>
-                <p>Beautiful curls with natural volume.</p>
-            </div>
-        </div>
-
-        <div class="hair-card">
-            <img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=700"
-                 alt="Straight hairstyle">
-            <div class="hair-info">
-                <h3>Straight Hairstyles</h3>
-                <p>Smooth, sleek and sophisticated styles.</p>
-            </div>
-        </div>
-
-        <div class="hair-card">
-            <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=700"
-                 alt="Wavy hairstyle">
-            <div class="hair-info">
-                <h3>Wavy Hairstyles</h3>
-                <p>Soft waves for an effortless look.</p>
-            </div>
-        </div>
-
-        <div class="hair-card">
-            <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=700"
-                 alt="Party hairstyle">
-            <div class="hair-info">
-                <h3>Party Hairstyles</h3>
-                <p>Glamorous hairstyles for special occasions.</p>
-            </div>
-        </div>
-
+  <!-- COLLECTIONS -->
+  <section class="collections section-padding" id="collections">
+    <div class="section-heading">
+      <div>
+        <span class="eyebrow">EXPLORE OUR WORLD</span>
+        <h2>Discover the <em>collections</em></h2>
+      </div>
+      <p>Find inspiration for every detail of your look.</p>
     </div>
 
-</section>
+    <div class="collection-grid">
 
-<!-- MEN'S HAIRSTYLES -->
-
-<section class="hair-section">
-
-    <span class="gender-tag">MEN'S COLLECTION</span>
-
-    <h2>Men's Hairstyles</h2>
-
-    <div class="hair-grid">
-
-        <div class="hair-card">
-            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=700"
-                 alt="Classic men's haircut">
-            <div class="hair-info">
-                <h3>Classic Haircut</h3>
-                <p>Timeless and professional hairstyles.</p>
-            </div>
+      <a href="hairstyles.html" class="collection-card">
+        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=800"
+          alt="Men's hairstyle inspiration">
+        <div class="card-overlay">
+          <span>01 / GROOMING</span>
+          <h3>Hairstyles</h3>
+          <span class="card-link">Explore collection ↗</span>
         </div>
+      </a>
 
-        <div class="hair-card">
-            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=700"
-                 alt="Modern men's haircut">
-            <div class="hair-info">
-                <h3>Modern Haircut</h3>
-                <p>Fresh and fashionable modern looks.</p>
-            </div>
+      <a href="outfits.html" class="collection-card">
+        <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=800"
+          alt="Fashion outfits">
+        <div class="card-overlay">
+          <span>02 / FASHION</span>
+          <h3>Outfits</h3>
+          <span class="card-link">Explore collection ↗</span>
         </div>
+      </a>
 
-        <div class="hair-card">
-            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=700"
-                 alt="Professional men's haircut">
-            <div class="hair-info">
-                <h3>Professional Style</h3>
-                <p>Smart hairstyles for work and business.</p>
-            </div>
+      <a href="accessories.html" class="collection-card">
+        <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=800"
+          alt="Fashion accessories and styling">
+        <div class="card-overlay">
+          <span>03 / DETAILS</span>
+          <h3>Accessories</h3>
+          <span class="card-link">Explore collection ↗</span>
         </div>
+      </a>
 
-        <div class="hair-card">
-            <img src="https://images.unsplash.com/photo-1531384441138-2736e62e0919?w=700"
-                 alt="Curly men's hair">
-            <div class="hair-info">
-                <h3>Curly Hair</h3>
-                <p>Natural curls and textured styles.</p>
-            </div>
+      <a href="shoes.html" class="collection-card">
+        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800"
+          alt="Fashion footwear">
+        <div class="card-overlay">
+          <span>04 / FOOTWEAR</span>
+          <h3>Shoes</h3>
+          <span class="card-link">Explore collection ↗</span>
         </div>
-
-        <div class="hair-card">
-            <img src="https://images.unsplash.com/photo-1521119989659-a83eee488004?w=700"
-                 alt="Short men's hair">
-            <div class="hair-info">
-                <h3>Short Hair</h3>
-                <p>Clean, simple and stylish short cuts.</p>
-            </div>
-        </div>
-
-        <div class="hair-card">
-            <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=700"
-                 alt="Trendy hairstyle">
-            <div class="hair-info">
-                <h3>Trendy Hairstyles</h3>
-                <p>Contemporary hairstyle inspiration.</p>
-            </div>
-        </div>
+      </a>
 
     </div>
+  </section>
 
-</section>
+  <!-- MEN AND WOMEN -->
+  <section class="gender-section section-padding">
+    <div class="section-heading">
+      <div>
+        <span class="eyebrow">STYLE FOR EVERYONE</span>
+        <h2>Find your <em>inspiration</em></h2>
+      </div>
+    </div>
 
-<!-- FOOTER -->
+    <div class="gender-grid">
+      <a href="outfits.html#men" class="gender-card">
+        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=900"
+          alt="Men's fashion model">
+        <div>
+          <span>THE MODERN GENTLEMAN</span>
+          <h3>Men's Style</h3>
+          <span>Discover more ↗</span>
+        </div>
+      </a>
 
-<footer>
+      <a href="outfits.html#women" class="gender-card">
+        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=900"
+          alt="Women's fashion model">
+        <div>
+          <span>THE ART OF ELEGANCE</span>
+          <h3>Women's Style</h3>
+          <span>Discover more ↗</span>
+        </div>
+      </a>
+    </div>
+  </section>
 
-    <h3>DHANUSH.</h3>
+  <!-- PHOTO PREVIEW -->
+  <section class="upload-section section-padding">
+    <div class="upload-content">
+      <span class="eyebrow">YOUR STYLE JOURNEY</span>
+      <h2>Make your look <em>your own.</em></h2>
+      <p>
+        Choose a photo from your device and preview it here.
+        Your selected image stays in this browser session.
+      </p>
 
-    <p>Style. Confidence. Personality.</p>
+      <label class="btn btn-primary upload-button" for="photoUpload">
+        Choose Your Photo
+      </label>
+      <input type="file" id="photoUpload" accept="image/*" hidden>
 
-    <p>Men's & Women's Hairstyle Collection</p>
+      <p class="upload-status" id="uploadStatus" aria-live="polite">
+        No photo selected yet.
+      </p>
+    </div>
 
-    <p>© 2026 DHANUSH Fashion Studio</p>
+    <div class="preview-frame">
+      <div id="emptyPreview" class="empty-preview">
+        <span>✦</span>
+        <p>Your photo preview will appear here</p>
+      </div>
+      <img id="photoPreview" alt="Your uploaded photo preview" hidden>
+    </div>
+  </section>
 
+  <!-- BRAND STATEMENT -->
+  <section class="quote-section">
+    <span class="eyebrow">THE DHANUSH PHILOSOPHY</span>
+    <h2>Elegance is not about being noticed.<br>
+      It's about being <em>remembered.</em></h2>
+    <span class="quote-line"></span>
+    <p>DHANUSH FASHION STUDIO</p>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-section section-padding">
+    <div>
+      <span class="eyebrow">LET'S CONNECT</span>
+      <h2>Your style story<br>starts <em>here.</em></h2>
+      <p>Have a collaboration idea or a fashion enquiry? We'd love to hear from you.</p>
+    </div>
+    <a href="contact.html" class="btn btn-primary">Contact Us ↗</a>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <a class="logo footer-logo" href="index.html">
+    DHANUSH<span>.</span>
+    <small>FASHION STUDIO</small>
+  </a>
+  <p>Fashion is personal. Make it yours.</p>
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="hairstyles.html">Hairstyles</a>
+    <a href="outfits.html">Outfits</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <p class="copyright">© <span id="year"></span> DHANUSH Fashion Studio. All rights reserved.</p>
 </footer>
+
+<script>
+  const menuToggle = document.getElementById("menuToggle");
+  const mainNav = document.getElementById("mainNav");
+
+  menuToggle.addEventListener("click", () => {
+    const isOpen = mainNav.classList.toggle("open");
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
+    menuToggle.setAttribute("aria-label",
+      isOpen ? "Close navigation" : "Open navigation");
+  });
+
+  mainNav.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      mainNav.classList.remove("open");
+      menuToggle.setAttribute("aria-expanded", "false");
+    });
+  });
+
+  const photoUpload = document.getElementById("photoUpload");
+  const photoPreview = document.getElementById("photoPreview");
+  const emptyPreview = document.getElementById("emptyPreview");
+  const uploadStatus = document.getElementById("uploadStatus");
+  let currentPhotoUrl = null;
+
+  photoUpload.addEventListener("change", event => {
+    const file = event.target.files[0];
+
+    if (!file) return;
+
+    if (!file.type.startsWith("image/")) {
+      uploadStatus.textContent = "Please select an image file.";
+      return;
+    }
+
+    if (file.size > 5 * 1024 * 1024) {
+      uploadStatus.textContent = "Please choose an image smaller than 5 MB.";
+      photoUpload.value = "";
+      return;
+    }
+
+    if (currentPhotoUrl) {
+      URL.revokeObjectURL(currentPhotoUrl);
+    }
+
+    currentPhotoUrl = URL.createObjectURL(file);
+    photoPreview.src = currentPhotoUrl;
+    photoPreview.hidden = false;
+    emptyPreview.hidden = true;
+    uploadStatus.textContent = "Photo preview: " + file.name;
+  });
+
+  document.getElementById("year").textContent =
+    new Date().getFullYear();
+</script>
 
 </body>
 </html>
