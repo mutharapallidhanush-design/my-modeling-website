@@ -1,0 +1,260 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hairstyles | DHANUSH Fashion Studio</title>
+
+    <link rel="stylesheet" href="fashion.css">
+
+    <style>
+        .hair-card {
+            background: white;
+            border: 1px solid #E9DDE9;
+            border-radius: 14px;
+            overflow: hidden;
+            transition: 0.3s;
+        }
+
+        .hair-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 25px #30263A15;
+        }
+
+        .hair-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .hair-info {
+            padding: 18px;
+        }
+
+        .hair-info h3 {
+            color: #30263A;
+            margin-bottom: 8px;
+        }
+
+        .hair-info p {
+            color: #746879;
+            font-size: 14px;
+        }
+
+        .hair-section {
+            padding: 50px 8%;
+        }
+
+        .hair-section h2 {
+            margin-bottom: 25px;
+        }
+
+        .hair-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        @media(max-width:750px) {
+            .hair-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media(max-width:480px) {
+            .hair-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+    <a href="index.html" class="logo">
+        DHANUSH<span>.</span>
+    </a>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="outfits.html">Outfits</a>
+        <a href="hairstyles.html" class="active">Hairstyles</a>
+        <a href="accessories.html">Accessories</a>
+        <a href="shoes.html">Shoes</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="tag">HAIR & BEAUTY COLLECTION</div>
+
+    <h1>Discover Your Perfect Hairstyle</h1>
+
+    <p>
+        Explore beautiful hairstyles for men and women.
+        Find the perfect hairstyle that matches your
+        personality, outfit and occasion.
+    </p>
+
+</section>
+
+<!-- WOMEN'S HAIRSTYLES -->
+
+<section class="hair-section">
+
+    <span class="gender-tag">WOMEN'S COLLECTION</span>
+
+    <h2>Women's Hairstyles</h2>
+
+    <div class="hair-grid">
+
+        <div class="hair-card">
+            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=700"
+                 alt="Long hairstyle">
+            <div class="hair-info">
+                <h3>Long Hairstyles</h3>
+                <p>Elegant and beautiful long hair inspiration.</p>
+            </div>
+        </div>
+
+        <div class="hair-card">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=700"
+                 alt="Short hairstyle">
+            <div class="hair-info">
+                <h3>Short Hairstyles</h3>
+                <p>Modern short cuts with a stylish appearance.</p>
+            </div>
+        </div>
+
+        <div class="hair-card">
+            <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=700"
+                 alt="Curly hairstyle">
+            <div class="hair-info">
+                <h3>Curly Hairstyles</h3>
+                <p>Beautiful curls with natural volume.</p>
+            </div>
+        </div>
+
+        <div class="hair-card">
+            <img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=700"
+                 alt="Straight hairstyle">
+            <div class="hair-info">
+                <h3>Straight Hairstyles</h3>
+                <p>Smooth, sleek and sophisticated styles.</p>
+            </div>
+        </div>
+
+        <div class="hair-card">
+            <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=700"
+                 alt="Wavy hairstyle">
+            <div class="hair-info">
+                <h3>Wavy Hairstyles</h3>
+                <p>Soft waves for an effortless look.</p>
+            </div>
+        </div>
+
+        <div class="hair-card">
+            <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=700"
+                 alt="Party hairstyle">
+            <div class="hair-info">
+                <h3>Party Hairstyles</h3>
+                <p>Glamorous hairstyles for special occasions.</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- MEN'S HAIRSTYLES -->
+
+<section class="hair-section">
+
+    <span class="gender-tag">MEN'S COLLECTION</span>
+
+    <h2>Men's Hairstyles</h2>
+
+    <div class="hair-grid">
+
+        <div class="hair-card">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=700"
+                 alt="Classic men's haircut">
+            <div class="hair-info">
+                <h3>Classic Haircut</h3>
+                <p>Timeless and professional hairstyles.</p>
+            </div>
+        </div>
+
+        <div class="hair-card">
+            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=700"
+                 alt="Modern men's haircut">
+            <div class="hair-info">
+                <h3>Modern Haircut</h3>
+                <p>Fresh and fashionable modern looks.</p>
+            </div>
+        </div>
+
+        <div class="hair-card">
+            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=700"
+                 alt="Professional men's haircut">
+            <div class="hair-info">
+                <h3>Professional Style</h3>
+                <p>Smart hairstyles for work and business.</p>
+            </div>
+        </div>
+
+        <div class="hair-card">
+            <img src="https://images.unsplash.com/photo-1531384441138-2736e62e0919?w=700"
+                 alt="Curly men's hair">
+            <div class="hair-info">
+                <h3>Curly Hair</h3>
+                <p>Natural curls and textured styles.</p>
+            </div>
+        </div>
+
+        <div class="hair-card">
+            <img src="https://images.unsplash.com/photo-1521119989659-a83eee488004?w=700"
+                 alt="Short men's hair">
+            <div class="hair-info">
+                <h3>Short Hair</h3>
+                <p>Clean, simple and stylish short cuts.</p>
+            </div>
+        </div>
+
+        <div class="hair-card">
+            <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=700"
+                 alt="Trendy hairstyle">
+            <div class="hair-info">
+                <h3>Trendy Hairstyles</h3>
+                <p>Contemporary hairstyle inspiration.</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+    <h3>DHANUSH.</h3>
+
+    <p>Style. Confidence. Personality.</p>
+
+    <p>Men's & Women's Hairstyle Collection</p>
+
+    <p>© 2026 DHANUSH Fashion Studio</p>
+
+</footer>
+
+</body>
+</html>
